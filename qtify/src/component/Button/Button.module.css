@@ -1,6 +1,6 @@
 .button {
     background-color: black;
-    color: var(--color-primary);
+    color: green;
     border-radius: 12px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -9,5 +9,6 @@
     Width: 170px;
     Height: 47px;
     font-size:medium;
+    
 
 }
