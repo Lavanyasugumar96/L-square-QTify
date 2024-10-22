@@ -4,14 +4,9 @@ import { CircularProgress } from '@mui/material';
 import styles from "./Section.module.css"
 import Carousel from '../Carousel/Carousel';
 
-// eg of data recieved is:
-// type='album' title='Top Albums' data={topAlbumSongs}
-// here, topAlbumSongs is just an array of 16-17 albums with some info and an array of songs in that album
 
 const Section=({type,title,data,toggle=true})=> {
 
-// if carouselToggle is true means render "collapsed" view (ie corousel of albums) and  on the button provide "show all" text
-// if carouselToggle is false means render "show all" view (ie All albums ) and  on the button provide "Collapse all" text
     const[carouselToggle,setCarouselToggle]=useState(true);
 
     const handleToggle=()=>{
@@ -53,7 +48,6 @@ const Section=({type,title,data,toggle=true})=> {
             </div>
         ):(
             <div className={styles.progressBar}>
-            {/* when no data recieved just show circular loading icon */}
             <CircularProgress />
             </div>
         )}
