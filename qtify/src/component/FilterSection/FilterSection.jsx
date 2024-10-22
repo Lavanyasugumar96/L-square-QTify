@@ -1,10 +1,11 @@
-//  import React, { useEffect } from 'react'
+  import React, { useEffect } from 'react'
 import styles from "./FilterSection.module.css";
-//  import Section from '../Section/Section';
+  import Section from '../Section/Section';
 import BasicTabs from '../BasicTabs/BasicTabs';
 import Carousel from '../Carousel/Carousel';
 import Card from '../card/Card.jsx';
 import { CircularProgress } from '@mui/material';
+
 const FilterSection = ({type, title, value, filteredData, handleChangeIndex}) => {
 
       
